@@ -382,7 +382,24 @@
       <div class="modal">
         <div class="modal-container">
           <h3>Deje sus datos, nos contactaremos con usted</h3>
-          <form></form>
+          <form name="info-contact" autocomplete="on">
+            <label>
+              Nombre
+              <input type="text" name="name" />
+            </label>
+            <label>
+              Teléfono
+              <input type="tel" name="phone" />
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Comentarios
+              <textarea name="comments" placeholder=""></textarea>
+            </label>
+          </form>
         </div>
         <button data-modal-close class="exit-modal">
           <svg width="18" height="18">
