@@ -383,30 +383,33 @@
         <div class="modal-container">
           <h3>Deje sus datos, nos contactaremos con usted</h3>
           <form name="info-contact" autocomplete="on">
-            <label>
+            <label class="info-user">
               Nombre
-              <input type="text" name="name" />
+              <input type="text" name="name" autofocus />
             </label>
-            <label>
+            <label class="info-user">
               Teléfono
               <input type="tel" name="phone" />
             </label>
-            <label>
+            <label class="info-user">
               E-mail
               <input type="email" name="email" />
             </label>
-            <label>
+            <label class="info-comments">
               Comentarios
               <textarea
                 name="comments"
                 placeholder="Introduzca el texto"
               ></textarea>
             </label>
-            <label>
+            <label class="info-agree">
               <input type="checkbox" name="agree" value="agree" />
-              Estoy de acuerdo con el boletín informativo y acepto los Términos
-              y Condiciones
+              <p>
+                Estoy de acuerdo con el boletín informativo y acepto los
+                Términos y Condiciones
+              </p>
             </label>
+            <button type="submit">Enviar</button>
           </form>
         </div>
         <button data-modal-close class="exit-modal">
