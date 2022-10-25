@@ -431,6 +431,7 @@ nav {
 }
 
 .info-user {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto';
@@ -451,6 +452,13 @@ nav {
     top: 314px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 42px;
+}
+
+.info-user>svg {
+    position: absolute;
+    top: 32px;
+    left: 15px;
 }
 
 .link {
@@ -539,6 +547,28 @@ nav {
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+}
+
+
+.modal-form>button {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 75px;
+    color: var(--text-banner);
+    background-color: var(--color-logo);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
 }
 
 .name {
