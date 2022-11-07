@@ -269,6 +269,12 @@ nav {
     cursor: pointer;
 }
 
+.exit-modal:hover,
+.exit-modal:focus {
+    fill: var(--color-logo);
+    outline: none;
+}
+
 .filters {
     display: flex;
     justify-content: center;
@@ -382,7 +388,7 @@ nav {
     margin-top: 20px;
 }
 
-.info-agree>input {
+.info-check {
     margin-top: 5px;
     margin-right: 8.38px;
 }
@@ -408,7 +414,7 @@ nav {
     color: var(--color-text);
 }
 
-.info-comments>textarea {
+.comments {
     margin-top: 4px;
     width: 100%;
     height: 120px;
@@ -420,7 +426,7 @@ nav {
     resize: none;
 }
 
-.info-comments>textarea::placeholder {
+.comments::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -428,6 +434,10 @@ nav {
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.comments:focus {
+    outline: none;
 }
 
 .info-user {
@@ -444,7 +454,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.info-user>input {
+.info-input {
     margin-top: 4px;
     width: 100%;
     height: 40px;
@@ -455,10 +465,19 @@ nav {
     padding-left: 42px;
 }
 
-.info-user>svg {
+.icon-input {
     position: absolute;
     top: 32px;
     left: 15px;
+}
+
+.info-input:focus {
+    border-color: var(--color-logo);
+    outline: none;
+}
+
+.info-input:focus+.icon-input {
+    fill: var(--color-logo);
 }
 
 .link {
