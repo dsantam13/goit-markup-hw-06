@@ -376,13 +376,31 @@
             </li>
           </ul>
         </section>
+        <section class="subscribe">
+          <form class="subscribe-form" name="subscribe-form">
+            <label class="subscribe-mail">
+              <h3>SUSCRÍBASE al boletín informativo</h3>
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Suscríbase
+              <svg class="send">
+                <use xlink:href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-container">
           <h3>Deje sus datos, nos contactaremos con usted</h3>
-          <form class="modal-form" name="info-contact" autocomplete="on">
+          <form class="modal-form" name="modal-form" autocomplete="on">
             <label class="info-user">
               Nombre
               <input class="info-input" type="text" name="name" autofocus />
