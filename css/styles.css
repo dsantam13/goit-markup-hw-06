@@ -392,11 +392,30 @@ nav {
 }
 
 .info-check {
-    margin-top: 5px;
-    margin-right: 8.38px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+}
+
+.info-check:checked+.box {
+    fill: var(--color-logo);
+    background-color: var(--color-logo);
+    border-radius: 2px;
+}
+
+.box {
+    margin-top: 5px;
+    width: 16px;
+    height: 15px;
+}
+
+.check {
+    position: relative;
+    width: 11px;
+    height: 8px;
+    top: 9px;
+    left: -13px;
+    fill: var(--text-banner);
 }
 
 .info-agree>p {
